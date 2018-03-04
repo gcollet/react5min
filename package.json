@@ -5,7 +5,8 @@
   "scripts": {
     "test": "jest",
     "start": "node ./bin/www",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "build-dev": "webpack --config webpack.config.js --progress --profile --colors --mode development"
   },
   "dependencies": {
     "babel-core": "^6.26.0",
@@ -39,5 +40,8 @@
     "serve-favicon": "~2.4.5",
     "supertest": "^3.0.0",
     "webpack": "^4.1.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^2.0.10"
   }
 }
